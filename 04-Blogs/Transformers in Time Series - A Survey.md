@@ -52,7 +52,7 @@ Attention 是 Transformer 中的核心部分。 在QKV（Query-Key-Value）的�
 
 ### 3 Taxonomy of Transformers in Time Series
 为了总结学术界存在的针对时间序列的 Transormer，作者从网络修改（network modifications）和应用领域（application domains）两个方面对原文进行了分析，分类细节如下图所示
-![](static/attachment/Pasted%20image%2020220713084230.png%5D)
+![](../aab/static/attachment/Pasted%20image%2020220713084230.png%5D)
 在下文的两个章节中，作者会从这两个方面深入分析。
 
 ### 4 Network Modifications for Time Series
@@ -81,7 +81,7 @@ Attention 是 Transformer 中的核心部分。 在QKV（Query-Key-Value）的�
 Transformer 的核心是 self-attention 模块，self-attention 可以被看做是带有权重的全连接层，根据输入模式的成对相似性动态生成（It can be viewed as a fully connected layer with the weights that are dynamically generated based on the pairwise similarity of input patterns.）。
 
 接下来分析各个模型的时间和内存复杂度。vanilla Transformer 的时间和内存复杂度是 $O(l^2)$,  使vanilla Transformer 在处理长时间序列的时候存在计算瓶颈。LogTrans [Li et al., 2019] and Pyraformer [Liu et al., 2022] 通过将稀疏性偏差显式引入 attention 减少计算量。Informer [Zhou et al., 2021] and FEDformer [Zhou et al., 2022]通过引入一种低水平的熟悉减少计算量。各模型的时间复杂度和内存复杂度图所示
-![](static/attachment/Pasted%20image%2020220713091535.png%5D)
+![](../aab/static/attachment/Pasted%20image%2020220713091535.png%5D)
 
 **4.3 Architecture-Level Innovation**
 介绍各个 Transformer 模型在网络结构上的变化以及更新，以及其优缺点。
@@ -116,12 +116,12 @@ Robustness Analysis
 上面介绍的这些Transormer模型中，为了减少计算和内存复杂度，他们都是用了固定大小的输入来获得更好的实验效果。但是，在实际应用中，我们无法知道其设计是否真正的有高效。文章设计了实验来验证这些算法在长时间序列（long-term sequence)的稳健性（rubust),。
 
 实验结果如下所示
-![](static/attachment/Pasted%20image%2020220713093128.png%5D)
+![](../aab/static/attachment/Pasted%20image%2020220713093128.png%5D)
 结论是：这些精心设计的Transformer无法在 long-term sequence 中获得更好的效果，更多的工作应该关注 long sequence 。
 
 *Model Size Analysis*
 实验探索了 layers 的层数与模型性能的对比，结果如下所示
-![sdfs](../../main/static/attachment/Pasted%20image%2020220713094330.png)
+![](../aab/static/attachment/Pasted%20image%2020220713094330.png%5D)
 从表中可知，layer 为3-6层的神经网络的性能优于更高层layers的神经网络，结论：如何设计一个正确的 Transformer，使其随着模型复杂度的增加实现更好的性能。
 
 
