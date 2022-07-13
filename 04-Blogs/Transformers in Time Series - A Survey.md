@@ -85,7 +85,7 @@ Transformer 的核心是 self-attention 模块，self-attention 可以被看做�
 介绍各个 Transformer 模型在网络结构上的变化以及更新，以及其优缺点。
 
 ### 5 Applications of Time Series Transformers
-本章介绍 Time Series Transformers** 在预测（Forecasting）、异常检测（ Anomaly Detection）、分类（Classification）的相关工作及其优缺点。
+本章介绍 Time Series Transformers  在预测（Forecasting）、异常检测（ Anomaly Detection）、分类（Classification）的相关工作及其优缺点。
 
 **5.1 Transformers in Forecasting**
 *Time Series Forecasting*
