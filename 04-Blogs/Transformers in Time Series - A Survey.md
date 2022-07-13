@@ -121,7 +121,7 @@ Robustness Analysis
 
 *Model Size Analysis*
 实验探索了 layers 的层数与模型性能的对比，结果如下所示
-![sdfs](../../static/attachment/Pasted%20image%2020220713094330.png%5D)
+![sdfs](main/static/attachment/Pasted%20image%2020220713094330.png%5D)
 从表中可知，layer 为3-6层的神经网络的性能优于更高层layers的神经网络，结论：如何设计一个正确的 Transformer，使其随着模型复杂度的增加实现更好的性能。
 
 
