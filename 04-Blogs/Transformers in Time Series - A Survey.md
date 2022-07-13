@@ -13,11 +13,10 @@ tags:
 ## Summary
 文章介绍了 Transformer 在时间序列数据数据方面的应用。从 Transformer 的网络架构变更、应用领域（预测、异常检测、分类）进行了分析。文章总结了一些在时间序列数据领域的代表性的 Transformer 方法，并通过实验，讨论了这些Transformer算法的优点和缺点，并且探讨了未来的研究方向。
  
-
-## 段落总结
+## 原文解读
 本章以原文段落为依据解析原文。
 
- ### **1  Introduction**
+ ### 1  Introduction
 由于 Transformer 在 NLP、CV（Computer vision，计算机视觉)、speech processing 的优异表现，Transformer成为了当下的研究热点。
 
 Transformers 对于依赖范围大（longrange dependencies)、前后有关联（interactions)的序列数据（sequential data)有很强的建模能力，因此 Transformers 开始用于对时间序列(time series) 建模。[Li et al., 2019; Zhou et al., 2021; Zhou et al., 2022] 在时间序列预测方面做了研究，[Xu et al., 2022; Tuli et al., 2022] 在异常检测方面做了研究，[Zerveas et al., 2021; Yang et al., 2021] 在时间序列分类方面做了研究。
@@ -50,12 +49,12 @@ Attention 是 Transformer 中的核心部分。 在QKV（Query-Key-Value）的�
 介绍了 Feed-forward and Residual Network 。
 
 
-### **3 Taxonomy of Transformers in Time Series**
+### 3 Taxonomy of Transformers in Time Series
 为了总结学术界存在的针对时间序列的 Transormer，作者从网络修改（network modifications）和应用领域（application domains）两个方面对原文进行了分析，分类细节如下图所示
 ![[static/attachment/Pasted image 20220713084230.png]]
 在下文的两个章节中，作者会从这两个方面深入分析。
 
-### **4 Network Modifications for Time Series**
+### 4 Network Modifications for Time Series
 本章介绍 Transorfor 模型的网络架构在时间序列上的迭代更新。
 
 *4.1 Positional Encoding*
@@ -85,7 +84,7 @@ Transformer 的核心是 self-attention 模块，self-attention 可以被看做�
 **4.3 Architecture-Level Innovation**
 介绍各个 Transformer 模型在网络结构上的变化以及更新，以及其优缺点。
 
-### **5 Applications of Time Series Transformers**
+### 5 Applications of Time Series Transformers
 本章介绍 Time Series Transformers** 在预测（Forecasting）、异常检测（ Anomaly Detection）、分类（Classification）的相关工作及其优缺点。
 
 **5.1 Transformers in Forecasting**
@@ -105,7 +104,7 @@ Transformer 的核心是 self-attention 模块，self-attention 可以被看做�
 **5.3 Transformers in Classification**
 GTN [Liu et al., 2021]、[Rußwurm and K ̈ orner, 2020]、[Yuan and Lin, 2020]、[Zerveas et al., 2021]、[Yang et al., 2021]在时间序列分类方面的研究介绍。
 
-### **6 Experimental Evaluation and Discussion**
+### 6 Experimental Evaluation and Discussion
 本章通过数据集（ benchnmark dataset ETTm2 [Zhou et al., 2021]）上对上述提到的 Transformer 进行了三方面的验证：
 1. 在长时间序列（long-term sequence）的性能（通过 MSE 评估）
 2. 网络层数（layers）对模型性能的影响
@@ -127,7 +126,7 @@ Robustness Analysis
 *Seasonal-Trend Decomposition Analysis*
 分析各个 Transformer 在 seasonal-trend decomposition  上的性能。
 
-### **7 Future Research Opportunities**
+### 7 Future Research Opportunities
 本章探讨了未来可能的研究方向。
 
 7.1 结合时间序列数据的更多特征，开发针对特定任务的 Transformer 
@@ -135,5 +134,5 @@ Robustness Analysis
 7.3 如何开发针对时间序列数据的 pre-trained Transformer model 
 7.4 使用自动机器学习自动发现计算和内存架构的 Transformer
 
-### **8 Conclusion**
+### 8 Conclusion
 讨论了 Transformers 在时间序列数据中的应用，分别从模型修改和应用领域两个维度对 Transormer 进行分析。在每个类别中，总结了一些具有代表性的方法，通过实验，讨论了他们的优点和缺点，并且明确了未来的研究方向。
